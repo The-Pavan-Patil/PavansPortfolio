@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/Components/theme-provider";
+import { ThemeProvider } from "./provider";
+
 
 const inter = Inter({
   variable: "--font-geist-sans",
@@ -26,7 +27,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.className}> <ThemeProvider
+        className={inter.className}>
+        <ThemeProvider
         attribute="class"
         defaultTheme="dark"
         enableSystem

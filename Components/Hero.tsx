@@ -2,6 +2,8 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { div } from 'framer-motion/client'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
     return (<div className="pb-20 pt-36">
@@ -32,6 +34,10 @@ const Hero = () => {
                     Hi! I&apos;m Pavan, a Full Stack Developer based in Pune, India.
                 </p>
 
+                <a href="#about">
+                    <MagicButton title="Show my Work" icon={<FaLocationArrow/>} position={'right'}/>
+                </a>
+                
 
             </div>
         </div>
