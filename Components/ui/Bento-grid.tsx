@@ -13,6 +13,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import Globe from "react-globe.gl";
 import { div } from "framer-motion/client";
+import GlobeGrid from "./GlobeGrid";
 
 export const BentoGrid = ({
   className,
@@ -138,10 +139,10 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* Replaced GridGlobe with an image */}
+     
           {id === 2 && (
-            <div className="globe-container w-full h-full flex justify-center items-center">
-         <Globe/>
+            <div className="absolute left-0 w-full h-full">
+         <GlobeGrid/>
         </div>
             )}
 

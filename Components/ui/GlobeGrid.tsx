@@ -19,7 +19,7 @@ const GridGlobe = () => {
   }));
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="flex items-center justify-center relative w-full h-full">
       <Globe
         globeImageUrl="https://unpkg.com/three-globe/example/img/earth-night.jpg"
         arcsData={arcsData}
@@ -27,8 +27,8 @@ const GridGlobe = () => {
         arcDashLength={() => Math.random()}
         arcDashGap={() => Math.random()}
         arcDashAnimateTime={() => Math.random() * 4000 + 500}
-        width={500} // Adjust size
-        height={50}
+        width={700} 
+        height={500}
       />
     </div>
   );
