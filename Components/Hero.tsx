@@ -27,11 +27,11 @@ const Hero = () => {
                     Dynamic Web Magic with Next.js
                 </p>
                 <TextGenerateEffect
-                    words="Transforming Concepts into Seamless User Experiences"
+                    words="A Wizard of Code, Turning Concepts into Magical Solutions."
                     className="text-center text-[40px] md:text-5xl lg:text-6xl"
                 />
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hi! I&apos;m Pavan, a Full Stack Developer based in Pune, India.
+                    Hi! I&apos;m Pavan Patil, a Full Stack Developer based in Pune, India.
                 </p>
 
                 <a href="#about">

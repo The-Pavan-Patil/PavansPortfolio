@@ -1,3 +1,5 @@
+import Approach from "@/Components/Approach";
+import Footer from "@/Components/Footer";
 import Grid from "@/Components/Grid";
 import Hero from "@/Components/Hero";
 import RecentProjects from "@/Components/RecentProjects";
@@ -10,7 +12,7 @@ import { FaHome } from "react-icons/fa";
 export default function Home() {
   return (
     
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto  overflow-clip sm:px-10 px-5">
       <FloatingNav navItems={navItems}/>
       <div className="max-w-7xl w-full h-full">
         
@@ -19,6 +21,8 @@ export default function Home() {
         <Grid></Grid>
         <RecentProjects/>
         <WorkExperience/>
+        {/* <Approach/> */}
+        <Footer/>
       </div>
     </main>
   );
