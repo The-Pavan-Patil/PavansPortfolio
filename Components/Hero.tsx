@@ -22,16 +22,16 @@ const Hero = () => {
        bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"/>
         </div>
         <div className='flex justify-center relative my-20 z-10'>
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[100vw] flex flex-col items-center justify-center">
                 <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
                     Dynamic Web Magic with Next.js
                 </p>
                 <TextGenerateEffect
-                    words="Transforming Concepts into Seamless User Experiences"
+                    words="A Wizard of Code, Turning Concepts into Magical Solutions."
                     className="text-center text-[40px] md:text-5xl lg:text-6xl"
                 />
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hi! I&apos;m Pavan, a Full Stack Developer based in Pune, India.
+                    Hi! I&apos;m Pavan Patil, a Full Stack Developer based in Pune, India.
                 </p>
 
                 <a href="#about">
