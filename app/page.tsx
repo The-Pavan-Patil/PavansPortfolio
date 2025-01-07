@@ -1,4 +1,4 @@
-import Approach from "@/Components/Approach";
+
 import Clients from "@/Components/Company";
 import Footer from "@/Components/Footer";
 import Grid from "@/Components/Grid";
@@ -9,8 +9,8 @@ import { FloatingNav } from "@/Components/ui/floating-navbar";
 import WorkExperience from "@/Components/WorkExperience";
 
 import { navItems } from "@/data";
-import Image from "next/image";
-import { FaHome } from "react-icons/fa";
+
+
 
 export default function Home() {
   return (
