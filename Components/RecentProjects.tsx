@@ -9,8 +9,8 @@ const RecentProjects = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className=" heading ">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        Chamber of {" "}
+        <span className="text-purple">Creation</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -32,7 +32,7 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute "
                 />
               </div>
 

@@ -16,19 +16,23 @@ const WorkExperience = () => {
             borderRadius='1.75rem'
             className='flex-1 text-white border-neutral-200 dark:border-slate-800'
             >
-                <div className='flex '>
+                <div className='flex px-4'>
                     <img src={cards.thumbnail} alt={cards.thumbnail} 
-                    className='lg:w-32 md:w-20 w-16'  />
-                    <div className='lg:ms-5'>
-                    <h1 className='className="text-start text-xl md:text-2xl mt-3 font-bold'>
+                    className='lg:w-32 md:w-20 w-16 sm:hidden'  />
+                    <div className='lg:ms-5 text-start '>
+                    <h1 className='text-start text-xl md:text-2xl mt-3 font-bold'>
                         {cards.title}
                     </h1>
-                    <p className='className="text-start text-white-100 mt-3 mb-3 font-semibold'>
+                    <h2 className='text-start text-lg mt-1 font-semibold'>
+                        {cards.company}
+                    </h2>
+                    <p className=' text-justify text-white-100 mt-3 mb-3 font-semibold'>
                         {cards.desc}
                     </p>
                     </div>
                 </div>
             </Button>
+            
         ))}
         </div>
         </div>
