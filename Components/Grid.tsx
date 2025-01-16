@@ -1,6 +1,5 @@
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/Bento-grid'
-import { section } from 'framer-motion/client'
 import { gridItems } from '@/data'
 
 const Grid = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import { div } from 'framer-motion/client'
 import {TextHoverEffect} from './ui/TextReveal'
 
 const Plan = () => {
