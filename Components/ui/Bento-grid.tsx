@@ -2,16 +2,13 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { IoCopyOutline } from "react-icons/io5";
-// Also install this npm i --save-dev @types/react-lottie
-// import  Lottie from "react-lottie";
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import GlobeGrid from "./GlobeGrid";
+import LottiePlayer from "./LottiePlayer";
 
-
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+const GlobeGrid = dynamic(() => import("./GlobeGrid"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -186,7 +183,7 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <LottiePlayer options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
