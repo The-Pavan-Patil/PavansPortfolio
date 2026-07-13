@@ -6,9 +6,9 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
-import LottiePlayer from "./LottiePlayer";
 
 const GlobeGrid = dynamic(() => import("./GlobeGrid"), { ssr: false });
+const LottiePlayer = dynamic(() => import("./LottiePlayer"), { ssr: false });
 
 export const BentoGrid = ({
   className,
@@ -182,8 +182,9 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <LottiePlayer options={defaultOptions} height={200} width={400} />
+                {copied && (
+                  <LottiePlayer options={defaultOptions} height={200} width={400} />
+                )}
               </div>
 
               <MagicButton
